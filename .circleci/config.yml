@@ -14,23 +14,23 @@ jobs:
       - aws-cli/setup
       - aws-elastic-beanstalk/setup
       - run:
-        name: install frontend
-        command: npm run install:frontend
+          name: Install Frontend
+          command: npm run install:frontend
       - run:
-        name: install backend
-        command: npm run install:backend
+          name: Install Backend
+          command: npm run install:backend
       - run:
-        name: build frontend
-        command: npm run build:frontend
+          name: Build Frontend
+          command: npm run build:frontend
       - run:
-        name: build backend
-        command: npm run build:backend
+          name: Build Backend
+          command: npm run build:backend
       - run:
-        name: deploy frontend
-        command: npm run deploy:frontend
+          name: Deploy Frontend
+          command: npm run deploy:frontend
       - run:
-        name: deploy backend
-        command: npm run deploy:backend
+          name: Deploy Backend
+          command: npm run deploy:backend
 workflows:
   udagram:
     jobs:
