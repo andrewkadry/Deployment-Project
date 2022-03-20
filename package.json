@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "install:frontend": "cd udagram-frontend && npm install"
+    }
+}
